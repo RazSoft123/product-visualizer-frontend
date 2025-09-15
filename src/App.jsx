@@ -1,6 +1,6 @@
 import NotFound from "./components/NotFound";
-import ProductDetails from "./components/ProductDetails";
-import Products from "./components/Products";
+import ProductDetails from "./components/product-details-page/ProductDetails";
+import Products from "./components/products-page/Products";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
