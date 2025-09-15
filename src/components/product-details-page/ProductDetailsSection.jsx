@@ -3,7 +3,7 @@ import ProductCanvas3D from "./ProductCanvas3D";
 export default function ProductDetailsSection() {
   return (
     <section className="product-details-section pt-[100px]">
-      <h2>Product Details</h2>
+      <h2 className="text-4xl font-bold text-center py-8">Product Details</h2>
       <div>
         <ProductCard />
       </div>
@@ -13,9 +13,9 @@ export default function ProductDetailsSection() {
 
 function ProductCard() {
   return (
-    <div className="max-w-5xl mx-auto p-6 bg-white rounded-lg shadow grid grid-rows-2 md:grid-cols-2 gap-8">
+    <div className="max-w-5xl mx-auto p-6 bg-white rounded-lg shadow grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-8">
       {/* Left: Image */}
-      <div className="min-w-[320px] min-h-[420px] flex-1 flex items-center justify-center">
+      <div className="min-w-[320px] min-h-[420px] flex-1 flex items-center justify-center overflow-hidden rounded-2xl">
         <ProductCanvas3D modelUrl="/chair_2.glb" />
       </div>
 
