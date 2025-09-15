@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function ProductCard({ name, image }) {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center rounded-xl border-1 hover:scale-105 transition-all duration-200 ease-in">
