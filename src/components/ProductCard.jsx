@@ -1,6 +1,6 @@
 export default function ProductCard({ name, image }) {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center rounded-xl border-1 ">
+    <div className="w-full h-full flex flex-col items-center justify-center rounded-xl border-1 hover:scale-105 transition-all duration-200 ease-in">
       <div className="overflow-hidden  rounded-2xl">
         <img src={image} alt={"image of " + name} />
       </div>

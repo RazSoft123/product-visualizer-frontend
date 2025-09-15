@@ -1,12 +1,17 @@
 import NavigationBar from "./components/NavigationBar";
-import ProductSection from "./components/ProductSection";
+import ProductDetails from "./components/ProductDetails";
+import Products from "./components/Products";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <NavigationBar />
-      <ProductSection />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/products" replace />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/product-details/:id" element={<ProductDetails />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
