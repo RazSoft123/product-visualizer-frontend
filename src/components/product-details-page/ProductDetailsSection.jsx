@@ -1,6 +1,9 @@
 import ProductCanvas3D from "./ProductCanvas3D";
 
 export default function ProductDetailsSection() {
+
+  
+
   return (
     <section className="product-details-section pt-[100px]">
       <h2 className="text-4xl font-bold text-center py-8">Product Details</h2>
