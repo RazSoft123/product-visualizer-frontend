@@ -43,7 +43,7 @@ export default function ProductCanvas3D({ modelUrl }) {
       >
         <ambientLight intensity={1.2} />
         <directionalLight position={[2, 2, 3]} />
-        <color attach="background" args={["yellow"]} />
+        <color attach="background" args={["#A0B7E1"]} />
         <OrbitControls
           enablePan={false}
           minDistance={1}
